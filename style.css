@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 380px;
+}
+
+h1 { margin-bottom: 20px; font-weight: bold; }
+
+.placar {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.placar span { font-weight: bold; }
+
+.botoes-escolha {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-escolha {
+    font-size: 2rem;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn-escolha:hover { transform: scale(1.1); }
+
+.arena-resultado {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.icone-resultado {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.status-resultado {
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+/* Classes dinâmicas injetadas pelo JS */
+.ganhou { background-color: #d4edda; color: #155724; }
+.perdeu { background-color: #f8d7da; color: #721c24; }
+.empate { background-color: #e2e3e5; color: #383d41; }
