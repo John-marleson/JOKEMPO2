@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+        <h1>JOKEMPO</h1>
+
+        <div class="placar">
+            <p>Computador: <span id="score-computador">0</span></p>
+            <p>Você: <span id="score-jogador">0</span></p>
+        </div>
+
+        <h2>Faça sua escolha</h2>
+        
+        <div class="botoes-escolha">
+            <button class="btn-escolha" data-opcao="pedra">✊</button>
+            <button class="btn-escolha" data-opcao="papel">✋</button>
+            <button class="btn-escolha" data-opcao="tesoura">✌️</button>
+        </div>
+
+        <div class="arena-resultado">
+            <div>
+                <p>Você escolheu</p>
+                <div id="escolha-jogador" class="icone-resultado">-</div>
+            </div>
+            <div>
+                <p>O Computador escolheu</p>
+                <div id="escolha-computador" class="icone-resultado">-</div>
+            </div>
+        </div>
+
+        <div id="mensagem-resultado" class="status-resultado">---</div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
